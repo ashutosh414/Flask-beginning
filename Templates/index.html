@@ -32,6 +32,9 @@
                 max-width: 50%;
                 margin: 0 auto 0 auto;
             }
+            .tab button:hover {
+                background-color: #a9a5a5;
+            }
 
 
         </style>
@@ -50,8 +53,13 @@
         </p>
 
         <h2>Job opening</h2>
+        <div>
+            {% for job in jobs %}
+            {% include 'jobindex.html' %}
+            {% endfor %}
+        </div>
         <div style="text-align: center;">
-            
+
         <button>Contact Us</button>
         </div>
 </div>

@@ -1,0 +1,17 @@
+<div class ="tab" style="margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #e3dfdf;">
+    <h3 style="color: rgb(120, 120, 120); margin-bottom: 4px;">
+        {{job['job_position']}}
+    </h3>
+    <div>
+        <button class="tablink" style="float: right; font-size: 18px; padding: 8px 17px;">Apply</button>
+    </div>
+    <div>
+       <b> Location :</b> {{job['location']}}
+    </div>
+    {% if 'salary' in job %}
+    <div>
+        <b>Salary :</b> {{job['salary']}}
+    </div>
+    {% endif %}
+    
+</div>
